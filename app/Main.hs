@@ -21,7 +21,7 @@ renderOptions w h = SVGOptions { _size = dims2D w h
                             , _svgDefinitions = Nothing
                             , _idPrefix = ""
                             }  
-  
+
 main = scotty 9292 $ do
   get "/" $ do
     html $ render defaultWidth defaultHeight
@@ -32,4 +32,4 @@ main = scotty 9292 $ do
     html $ render width height
 
   where render w h = pack $ show $
-          renderDia SVG (renderOptions w h) $ BTree.diagram
+          renderDia SVG (renderOptions w h) $ BTree.diagram # bg (sRGB24read "#fdf6e3")

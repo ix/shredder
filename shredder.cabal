@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c207b444a3233359191e586c33fea8ba4888e7f136a4d8b184cbbbda071bdb78
+-- hash: 6c3678b6bcef2ad5b8bdfdc10100158e56ee62f24710d3d39113a17dc1e704b0
 
 name:           shredder
 version:        0.1.0.0
@@ -13,6 +13,7 @@ author:         Rose
 maintainer:     rose@lain.org.uk
 copyright:      2018 Rose
 license:        BSD3
+license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
 extra-source-files:
